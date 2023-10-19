@@ -1,8 +1,7 @@
 import React from "react";
-import SearchBar from "./SearchBar";
-import List from "./List";
+import List from "../component/List";
 import { useSelector } from "react-redux";
-import AddButton from "./AddButton";
+import AddButton from "../component/AddButton";
 import { DragDropContext, Droppable } from "react-beautiful-dnd";
 import { sort } from "../actions";
 import { useDispatch } from "react-redux";
@@ -10,8 +9,6 @@ import { useDispatch } from "react-redux";
 function Body() {
   const lists = useSelector((state) => state.lists);
   const dispatch = useDispatch();
-
-  console.log(lists);
 
   const onDragEnd = (result) => {
     const { destination, source, draggableId, type } = result;
@@ -33,7 +30,6 @@ function Body() {
   return (
     <DragDropContext onDragEnd={onDragEnd}>
       <div>
-        <SearchBar />
         <Droppable droppableId="droppable-id" direction="vertical" type="list">
           {(provided) => (
             <div {...provided.droppableProps} ref={provided.innerRef}>
