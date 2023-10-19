@@ -34,3 +34,29 @@ export const sort = (
     },
   };
 };
+
+export const userRegistration = (
+  email,
+  userName,
+  password,
+  confirmPassword
+) => {
+  return {
+    type: CONSTANTS.REGISTER_USER,
+    payload: {
+      id: new Date().getTime(),
+      email,
+      userName,
+      password,
+      confirmPassword,
+    },
+  };
+};
+
+export const userLogin = (userName, password) => {
+  return {
+    type: CONSTANTS.LOGIN_USER,
+    payload: userName,
+    password,
+  };
+};
