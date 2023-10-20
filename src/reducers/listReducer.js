@@ -3,29 +3,96 @@ import { CONSTANTS } from "../actions/constants";
 const initialState = [
   {
     id: `listId-0`,
-    title: "Harry",
+    title: "Backlog",
+    description: "Neque porro quisquam est qui dolorem.",
+    img: ``,
     cards: [
       {
         id: `cardId-0`,
-        value: "Testing1 testing testing",
+        value: "Performance Improvement",
+        assigned_user: "User-1",
+        description:
+          "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       },
       {
         id: `cardId-1`,
-        value: "Testing2 testing testing",
+        value: "Implement new design",
+        assigned_user: "User-2",
+        description:
+          "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
       },
     ],
   },
   {
     id: `listId-1`,
-    title: "My little pony",
+    title: "Ready",
+    description: "Neque porro quisquam est qui dolorem ipsum quia dolor.",
+    img: ``,
     cards: [
       {
         id: `cardId-2`,
-        value: "Pony1 testing testing",
+        value: "Design navigation changes",
+        assigned_user: "User-3",
+        description:
+          "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       },
       {
         id: `cardId-3`,
-        value: "Pony2 testing testing",
+        value: "Design Prototype",
+        assigned_user: "User-4",
+        description:
+          "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+      },
+      {
+        id: `cardId-4`,
+        value: "Website design",
+        assigned_user: "User-4",
+        description:
+          "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      },
+    ],
+  },
+  {
+    id: `listId-2`,
+    title: "In Progress",
+    description:
+      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet",
+    img: ``,
+    cards: [
+      {
+        id: `cardId-5`,
+        value: "Build Social sharing functionality",
+        assigned_user: "User-3",
+        description:
+          "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      },
+      {
+        id: `cardId-6`,
+        value: "Redesign overview",
+        assigned_user: "User-4",
+      },
+    ],
+  },
+  {
+    id: `listId-3`,
+    title: "Done",
+    description:
+      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+    img: ``,
+    cards: [
+      {
+        id: `cardId-7`,
+        value: "Usability Testing",
+        assigned_user: "User-3",
+        description:
+          "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+      },
+      {
+        id: `cardId-8`,
+        value: "Introduce new navigation",
+        assigned_user: "User-4",
+        description:
+          "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
       },
     ],
   },
