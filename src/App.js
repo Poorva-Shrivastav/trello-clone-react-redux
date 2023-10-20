@@ -1,5 +1,4 @@
 import "./App.css";
-
 import Body from "./pages/Body";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
@@ -13,10 +12,10 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<Register />} />
+          <Route exact path="/dashboard" element={<Body />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/dashboard" element={<Body />} />
           <Route path="/project" element={<Project />} />
+          <Route path="/" element={<Register />} />
         </Routes>
       </BrowserRouter>
     </div>

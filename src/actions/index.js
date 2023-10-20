@@ -35,20 +35,14 @@ export const sort = (
   };
 };
 
-export const userRegistration = (
-  email,
-  userName,
-  password,
-  confirmPassword
-) => {
+export const userRegistration = (userName, email, password) => {
   return {
     type: CONSTANTS.REGISTER_USER,
     payload: {
       id: new Date().getTime(),
-      email,
       userName,
+      email,
       password,
-      confirmPassword,
     },
   };
 };

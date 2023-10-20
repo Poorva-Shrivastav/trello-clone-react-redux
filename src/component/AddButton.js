@@ -11,14 +11,10 @@ function AddButton({ list, listId }) {
 
   const dispatch = useDispatch();
 
-  console.log("cardId ", listId);
-
   const inputHandler = (e) => setUserInput(e.target.value);
 
-  const buttonText = list ? "Add another list" : "Add another card";
   const buttonOpacity = list ? 1 : 0.5;
   const buttonColour = list ? "white" : "gray";
-  // const buttonBackground = list ? "white" : "gray";
   const formButtonTitle = list ? "Add list" : "Add card";
 
   const clickHandler = () => {
@@ -51,9 +47,14 @@ function AddButton({ list, listId }) {
   };
 
   return (
-    <div style={{ color: buttonColour, opacity: buttonOpacity }}>
+    <div
+      style={{
+        color: buttonColour,
+        opacity: buttonOpacity,
+      }}
+    >
       <FaPlus />
-      <button onClick={clickHandler}>{buttonText}</button>
+      {/* <button onClick={clickHandler}>{buttonText}</button> */}
       {isFormOpen ? (
         <>
           <TextareaAutosize
